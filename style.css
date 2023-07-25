@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(159, 236, 236);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    padding: 28px;
+    border-radius: 12px;
+    background-color: aliceblue;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    height: min-content;
+    width: 100%;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search-box input {
+    background-color: aliceblue;
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    height: 30px;
+    border: 2px solid rgb(148, 141, 141);
+    border-radius: 20px;
+    text-align: center;
+    
+
+
+
+}
+
+.search-box input::placeholder {
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+.search-box button {
+    width: 45px;
+    height: 30px;
+    background-color: aliceblue;
+    border: 2px solid rgb(148, 141, 141);
+    border-radius: 20px;
+
+
+}
+
+.search-box button:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.weather-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.temperature {
+    font-size: 40px;
+    font-weight: 800;
+   
+}
+.description{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: Arial;
+    text-align: center;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.weather-details i{
+    font-size: 30px;
+}
+.text{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.location-not-found {
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-not-found img{
+    width: 80%;
+}
